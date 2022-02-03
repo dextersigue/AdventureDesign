@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 80%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.main__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.main__wrapper h1{
+    text-align: center;
+    font-size: 3.2rem;
+    margin: 3.5rem 0 0 0;
+    background-clip: text;
+    background-image: -webkit-linear-gradient(1deg,#90d886 25%, #24b481 70%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:
+    transparent;   
+ }
+
+.main__article{
+    background-color: white;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main__picture{
+    width: 5em, 50%, 3em;
+    position: absolute;
+}
+
+.main__leftside{
+    flex:2;
+    color: #858585;
+    position: relative;
+    right: 2rem;
+    bottom:1rem;
+}
+
+.main__leftside a{
+   position: relative;
+   text-decoration: none;
+}
+
+.main__leftside a::after{
+ position: absolute;
+ content: "";
+ width: 100%;
+ left: 0;
+ top: 2rem;
+ border-width: 0 0 0.2rem;
+ border-style: solid;
+}
+
+.main__leftside h2{
+    margin: 2rem 0 0 0;
+}
+
+.main__leftside p{
+    font-size: 1.4rem;
+    margin: 2rem 0 2rem 0;
+    width: 33vw;
+    line-height: 1.6;
+}
+
+.main__leftside h2 {
+    margin: 4rem 0 0 0;
+}
+
+.main__leftside a{
+    font-size: 1.4rem;
+    color: #94d7ab;
+
+}
+
+.main__rightside{
+    flex:1;
+    width: 50%;
+    position: relative;
+   
+}
+
+.main__rightside img{
+    width: 80%;
+    display:block;
+}
+
+.main__firstphoto{
+    position: absolute;
+    bottom:11rem;
+    right: 20rem;
+}
+
+.main__firstphoto:hover{
+   z-index: 1;
+   transform: scale(1.2);
+}
+
+.main__secondphoto{
+    position: absolute;
+    left:7rem;
+    top: 6rem;
+}
+
+.main__secondphoto:hover{
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+.main__thirdphoto{
+    position: absolute;
+    right:10rem;
+    top:13rem;
+}
+
+.main__thirdphoto:hover{
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+
+.bottom{
+    padding: 5rem;
+    background-color: #55c579;  
+} 
+
+.bottom__wrapper{
+    background-image:url(images/maskimage1.png), url(images/background.jpg);
+    background-size: 59%, 100%;
+    background-repeat: no-repeat;
+    background-position: left, bottom center;
+    padding: 4rem;
+    width: 65vw;
+    margin: 0 auto;
+    
+}
+
+.bottom__layer h2{
+    font-size: 2.8rem;
+    background-clip: text;
+    background-image: -webkit-linear-gradient(1deg,#90d886 10%, #24b481 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:
+    transparent; 
+}
+
+.bottom__wraptext{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 1rem 0 0 0;
+}
+
+.bottom__wraptext input{
+    margin:3rem 0 0 0;
+    padding: 1rem;
+    width: 22vw;
+    border: none;
+    background-color: rgb(255,255,255);
+    box-shadow: none;
+    
+}
+
+.bottom__wrap--checkbox{
+  display: flex;
+  margin: 3rem 0 3rem 0;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+}
+
+input[type="checkbox"]{
+  position: relative;
+  cursor: pointer;  
+  width: 0;
+  
+}
+
+input[type="checkbox"]::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    top: -0.1rem;
+    left: 0;
+    border: 0.4rem solid #55c579;
+    border-radius: 50%;
+    background-color: white;
+    
+}   
+
+input[type="checkbox"]:checked::after{
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color:#55c579;
+    border-radius: 50%;
+    outline: none;
+    border-width: 0 0.2rem 0.2rem 0;
+    position: absolute;
+    top: 0.6rem;
+    left: 0.7rem; 
+}
+   
+.bottom__margin{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+label{
+    margin: 0.6rem 0 0 3rem;
+    font-size: 1.4rem;
+    display: flex;
+    color:#858585;
+}
+
+.bottom__button {
+    list-style-type: none;
+}
+
+.bottom__button input{
+    background-color: #55c579;
+    color: white;
+    border: none;
+    width: 11vw;
+    height: 7vh;
+    border-radius: 8rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0.6rem 0 0 0;
+}
+
+
+
+
+
+
+
+
+
